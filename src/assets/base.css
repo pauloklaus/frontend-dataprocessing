@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap");
+
+:root {
+    --light: white;
+    --dark: black;
+    --primary: blue;
+    --danger: red;
+    --components: gainsboro;
+    --highlight: lightsteelblue;
+}
+* {
+    border: none;
+    font-family: Open Sans;
+    font-style: inherit;
+    font-weight: inherit;
+    list-style-type: none;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.light { color: var(--light) }
+.bg-light { background-color: var(--light) }
+
+.dark { color: var(--dark) }
+.bg-dark { background-color: var(--dark) }
+
+.primary { color: var(--primary) }
+.bg-primary { background-color: var(--primary) }
+
+.danger { color: var(--danger) }
+.bg-danger { background-color: var(--danger) }
+
+.components { color: var(--components) }
+.bg-components { background-color: var(--components) }
+
+.highlight { color: var(--highlight) }
+.bg-highlight { background-color: var(--highlight) }
+
+.field,
+.actions {
+    width: 500px;
+}
+.field {
+    margin-top: 16px;
+}
+.actions {
+    margin-top: 20px;
+}
+.field input {
+    border: 1px solid var(--components);
+    padding: 6px;
+    width: calc(100% - 12px);
+}
+.field input:focus {
+    background-color: var(--components);
+}
+.actions {
+    text-align: center;
+}
+.actions button {
+    color: black;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+}
+.actions button:focus {
+    background-color: var(--components);
+}
+.actions button:hover {
+    background-color: var(--highlight);
+}
